@@ -3,10 +3,15 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Button, Gap, Input } from '../../components';
 import { Header } from '../../components/Molekules';
 
-export default function index() {
+export default function index({ navigation }) {
   return (
     <View style={styles.wrapper}>
-      <Header title="Daftar Akun" />
+      <Header
+        title="Daftar Akun"
+        onPress={() => navigation.goBack()}
+        type="icon-only"
+        icons="back-dark"
+      />
       <View style={styles.container}>
         <Gap height={24} />
         <Input label="Fullname" />

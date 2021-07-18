@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { ArrowBack } from '../../../assets/img/icon';
-import { Gap } from '../../Atoms';
+import { colors, fonts } from '../../../utils';
+import { Button, Gap } from '../../Atoms';
 
-const index = ({ title }) => {
+const index = ({ title, onPress, type, icons }) => {
   return (
     <View style={styles.wrapper}>
-      <ArrowBack />
+      <Button type={type} icon={icons} onPress={onPress} />
       <Text style={styles.myTitle}>{title}</Text>
       <Gap width={24} />
     </View>
@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
   },
   myTitle: {
     fontSize: 20,
-    color: '#112340',
-    fontFamily: 'Nunito-SemiBold',
+    color: colors.secondary,
+    fontFamily: fonts.primary[600],
     flex: 1,
     textAlign: 'center',
   },
