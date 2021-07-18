@@ -2,6 +2,7 @@ import React from 'react';
 import { ImageBackground, StyleSheet, Text, View } from 'react-native';
 import { ILbg, ILlogo } from '../../assets/img';
 import { Button, Gap } from '../../components/index';
+import { fonts } from '../../utils';
 
 export default function GetStarted({ navigation }) {
   return (
@@ -45,6 +46,6 @@ const styles = StyleSheet.create({
     fontSize: 28,
     color: '#fff',
     marginTop: 90,
-    fontFamily: 'Nunito-SemiBold',
+    fontFamily: fonts.primary[600],
   },
 });

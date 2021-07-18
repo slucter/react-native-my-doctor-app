@@ -1,3 +1,3 @@
-import ArrowBack from './arrow_back_24px_outlined.svg';
+import ArrowBackDark from './arrow_back_24px_outlined.svg';
 
-export { ArrowBack };
+export { ArrowBackDark };
